@@ -1,11 +1,13 @@
-package Lesson_14_junit_5;
+package Lesson_14_junit_5_Test;
+import Lesson_14_junit_5.ArithmeticOperations;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArithmeticOperationsTest {
     @Test
     void testAdd() {
-        assertEquals(5, ArithmeticOperations.add(2, 3));
+        Assertions.assertEquals(5, ArithmeticOperations.add(2, 3));
     }
 
     @Test
