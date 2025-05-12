@@ -1,4 +1,4 @@
-package Lesson_14_testng;
+package Lesson_14;
 
 public class ArithmeticOperations {
     public static int add(int a, int b) {

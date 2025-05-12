@@ -1,4 +1,5 @@
 package Lesson_14_testng;
+import Lesson_14.TriangleArea;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
