@@ -7,7 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
 import java.util.List;
 
-    public class Lesson_15 {
+    public class OnlinePaymentBlockTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
