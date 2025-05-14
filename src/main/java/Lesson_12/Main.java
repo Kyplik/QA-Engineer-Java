@@ -1,19 +1,7 @@
-public class Lesson_12 {
-    // Собственные классы исключений
-    static class MyArraySizeException extends Exception {
-        public MyArraySizeException(String message) {
-            super(message);
-        }
-    }
+package Lesson_12;
 
-    static class MyArrayDataException extends Exception {
-        public MyArrayDataException(String message) {
-            super(message);
-        }
-    }
-
+public class Main {
     public static void main(String[] args) {
-        // Правильный массив
         String[][] correctArray = {
                 {"1", "2", "3", "4"},
                 {"5", "6", "7", "8"},
@@ -23,10 +11,10 @@ public class Lesson_12 {
 
         // Ошибка данных
         String[][] incorrectDataArray = {
-                {"1", "й", "3", "4"},
-                {"5", "6", "й", "8"},
-                {"й", "10", "11", "12"},
-                {"13", "14", "15", "й"}
+                {"1", "g", "3", "4"},
+                {"5", "6", "g", "8"},
+                {"g", "10", "11", "12"},
+                {"13", "14", "15", "g"}
         };
 
         // Ошибка размера
@@ -46,7 +34,6 @@ public class Lesson_12 {
             System.out.println("Ошибка данных в массиве: " + e.getMessage());
         }
 
-        // Генерация и обработка ArrayIndexOutOfBoundsException
         try {
             generateArrayIndexOutOfBounds();
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -66,7 +53,7 @@ public class Lesson_12 {
         }
 
         int sum = 0;
-        StringBuilder errors = new StringBuilder(); // Для сбора всех ошибок
+        StringBuilder errors = new StringBuilder();
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -88,7 +75,6 @@ public class Lesson_12 {
         return sum;
     }
 
-    // Метод для генерации ArrayIndexOutOfBoundsException
     public static void generateArrayIndexOutOfBounds() {
         int[] arr = new int[5];
         int value = arr[10];
